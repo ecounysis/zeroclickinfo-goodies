@@ -45,6 +45,17 @@ ddg_goodie_test(
             "http://www.minecraftxl.com/images/wiki/recipes/crafting-table-crafting.png",
         )
     ),
+    
+    'how do I craft a workbench in minecraft' =>
+    test_zci(
+        'Minecraft Crafting Table ingredients: Wooden Plank.',
+        make_structured_answer(
+            "Crafting Table",
+            "Wooden Plank",
+            "When placed on the ground, it provides use of the 3×3 crafting grid.",
+            "http://www.minecraftxl.com/images/wiki/recipes/crafting-table-crafting.png",
+        )
+    ),
 
     'how to make a crafting table minecraft' =>
     test_zci(
@@ -101,6 +112,18 @@ ddg_goodie_test(
         )
     ),
 
+    'what is the recipe for a diamond shovel on minecraft' =>
+    test_zci(
+        'Minecraft Shovels ingredients: Sticks + Wood Planks or Cobblestone or Iron Ingots or Gold Ingots or Diamonds.',
+        make_structured_answer(
+            "Shovels",
+            "Sticks + Wood Planks or Cobblestone or Iron Ingots or Gold Ingots or Diamonds",
+            "Used to effectively dig sand, dirt, gravel, snow and clay. Required to dig snowballs.",
+            "http://www.minecraftxl.com/images/wiki/recipes/shovels-crafting.gif",
+        )
+    ),
+
+    'diamond shovel' => undef,
     'craft ladder' => undef,
     'make tnt' => undef,
     'burger minecraft' => undef,

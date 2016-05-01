@@ -20,7 +20,7 @@ my %recipes = map{ lc $_->{'name'} => $_ } (@{ $decoded->{'items'} });
 my @recipe_names = sort { length($b) <=> length($a) } keys %recipes;
 
 # Extra words: Words that could be a part of the query, but not part of a recipe.
-my @extra_words = ('a','an','in','crafting','recipe','how to make','how to craft','how do I make','how do I craft');
+my @extra_words = ('a','an','in','crafting','recipe','how to','make','craft','how do I','for','what is','the','on');
 
 handle remainder => sub {
     my $remainder = $_;
@@ -28,7 +28,14 @@ handle remainder => sub {
     my $recipe;
     # find recipe name
     foreach my $recipe_name (@recipe_names) {
-        if ($remainder =~ s/$recipe_name//i) {
+        my $regex = $recipe_name;
+
+        # check if we have a regex for the recipe
+        if (exists( $recipes{$recipe_name}->{'regex'}))
+        {
+            $regex = $recipes{$recipe_name}->{'regex'};
+        }
+        if ($remainder =~ s/$regex//i) {
             $recipe = $recipes{$recipe_name};
             last;
         }

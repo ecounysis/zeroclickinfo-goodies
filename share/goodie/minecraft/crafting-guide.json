@@ -2,12 +2,14 @@
   "items": [
     {
       "name": "Chest",
+      "regex": "(?:storage ?chests?)|(?:(?:storage)|(?:chests?))",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/chest-crafting.png",
       "ingredients": "Wood Planks",
       "description": "Similar to your inventory. Holds up to 27 stacks of items or blocks."
     },
     {
       "name": "Crafting Table",
+      "regex": "(?:(?:work ?)?(?:bench(?:es)?))|(?:(?:crafting ?)?tables?)",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/crafting-table-crafting.png",
       "ingredients": "Wooden Plank",
       "description": "When placed on the ground, it provides use of the 3×3 crafting grid."
@@ -26,108 +28,126 @@
     },
     {
       "name": "Torches",
+      "regex": "(?:torch)|(?:light)|(?:candle)",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/torches-crafting.png",
       "ingredients": "Stick + Coal",
       "description": "Torches create light. They also have the ability to melt ice and snow."
     },
     {
       "name": "Wood Planks",
+      "regex": "(?:wood ?planks?)|(?:wood)|(?:planks?)",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/wood-planks-crafting.gif",
       "ingredients": "Wood (regular, birch or pine)",
       "description": "Can be used as a building material, but is usually used for a wide variety of crafting recipes."
     },
     {
       "name": "Anvil",
+      "regex": "(?:anvil)|(?:blacksmith)",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/anvil-crafting.png",
       "ingredients": "Iron Blocks + Iron Ingots",
       "description": "Used to combine enchantments and repair and rename items or blocks. Anvils are affected by gravity."
     },
     {
       "name": "Beacon",
+      "regex": "beacon ?(?:block)?",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/beacon-crafting.png",
       "ingredients": "Glass + Nether Star + Obsidian",
       "description": "Emits a light beam that can provide temporary player buffs, when placed on a pyramid made of diamond, emerald, gold or iron blocks. Can also be used as a landmark."
     },
     {
       "name": "Block of Coal",
+      "regex": "(?:coal ?(?:blocks?))|(?:blocks? ?of ?coal)",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/coal-block-crafting.png",
       "ingredients": "Coal",
       "description": "The block of coal is a compact way to store coal, and can be used for decoration and fuel."
     },
     {
       "name": "Block of Quartz",
+      "regex": "(?:quartz ?(?:blocks?))|(?:blocks? ?of ?quartz)",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/quartz-block-crafting.png",
       "ingredients": "Nether Quartz",
       "description": "Blocks of Quartz are mineral blocks crafted from Nether Quartz that are used only for decoration."
     },
     {
       "name": "Block of Redstone",
+      "regex": "(?:redstone ?(?:blocks?))|(?:blocks? ?of ?redstone)",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/redstone-block-crafting.png",
       "ingredients": "Redstone",
       "description": "Redstone blocks are compacted blocks can be used as a redstone power source."
     },
     {
       "name": "Bookshelf",
+      "regex": "book ?(?:(?:shel(?:(?:f)|(?:ves)))|(?:cases?))",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/bookshelf-crafting.png",
       "ingredients": "Wood Planks + Books",
       "description": "Used as decoration or to give an Enchantment Table, a boost for better enchantments."
     },
     {
       "name": "Brick Block",
+      "regex": "bricks? ?(?:blocks?)?",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/brick-block-crafting.png",
       "ingredients": "Bricks",
       "description": "Decorative building material. "
     },
     {
       "name": "Chiseled Quartz Block",
+      "regex": "(:?chi[sz][a-z]*) ?(?:quartz) ?(?:blocks?)?",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/chiseled-quartz-block-crafting.png",
       "ingredients": "Quartz Slab",
       "description": "Used as decorative building material."
     },
     {
       "name": "Chiseled Sandstone",
+      "regex": "(:?chi[sz][a-z]*) ?(?:sand) ?(?:ston[a-z]*)?",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/chiseled-sandstone-crafting.png",
       "ingredients": "Sandstone Slab",
       "description": "Chiseled Sandstone is a decorative form of sandstone with a Creeper face and various small carvings on it."
     },
     {
       "name": "Clay Block",
+      "regex": "clay ?(?:blocks?)?",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/clay-block-crafting.png",
       "ingredients": "Clay",
       "description": "Clay blocks can be used as building material or to store clay."
     },
     {
       "name": "Glowstone",
+      "regex": "(?:(?:(?:glow)|(?:brim)|(?:light)) ?stone)|(?:brittle ?gold)|(?:australium)",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/glowstone-crafting.png",
       "ingredients": "Glowstone Dust",
       "description": "Glowstones emits more light than a normal torch. It will melt nearby snow and ice. Breaking a glowstone block, will give 2-4 Glowstone Dust back."
     },
     {
       "name": "Hay Bale",
+      "regex": "(?:(?:hay)|(?:wheat)) ?(?:(?:block)|(?:bale))",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/hay-bale-crafting.png",
       "ingredients": "Wheat",
       "description": "Used as decorative block, or as food for horses."
     },
     {
       "name": "Jack-O-Lantern",
+      "regex": "(?:(?:lit)? ?(?:pumpkin)(?:(?: ?on)|(?:lighted)?))|(?:jack[- ]?o[- ]?lantern)",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/jack-o-lantern-crafting.png",
       "ingredients": "Pumpkin + Torch",
       "description": "Acts as a torch, but emits more light. Can stay lit underwater and melts nearby snow."
     },
     {
       "name": "Nether Brick",
+      "regex": "nether ?brick",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/nether-brick-crafting.png",
       "ingredients": "Nether Bricks (items)",
       "description": "Nether bricks are blocks found only in the The Nether. They are immune to Ghast fireballs."
     },
     {
       "name": "Pillar Quartz Block",
+      "regex": "(?:block ?(?:of)? ?)?quartz ?(?:block)?",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/pillar-quartz-block-crafting.png",
       "ingredients": "Block of Quartz",
       "description": "Used as decorative building material."
     },
     {
       "name": "Sandstone",
+      "regex": "sand ?stone",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/sandstone-crafting.png",
       "ingredients": "Sand",
       "description": "Used as a building material. Sandstone is not influenced by gravity like normal Sand."
@@ -242,6 +262,7 @@
     },
     {
       "name": "Pickaxes",
+      "regex": "pickaxe?s?",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/pickaxes-crafting.gif",
       "ingredients": "Sticks + Wood Planks or Cobblestone or Iron Ingots or Gold Ingots or Diamonds",
       "description": "Used to mine ore and blocks. Only Iron and Diamond Pickaxes can mine all ores and blocks. Diamond is the strongest pickaxe."
@@ -254,6 +275,7 @@
     },
     {
       "name": "Shovels",
+      "regex": "(?:(?:wood)|(?:stone)|(?:diamond)|(?:gold)|(?:iron))? ?shovels?",
       "image": "http://www.minecraftxl.com/images/wiki/recipes/shovels-crafting.gif",
       "ingredients": "Sticks + Wood Planks or Cobblestone or Iron Ingots or Gold Ingots or Diamonds",
       "description": "Used to effectively dig sand, dirt, gravel, snow and clay. Required to dig snowballs."
